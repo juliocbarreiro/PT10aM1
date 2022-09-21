@@ -23,9 +23,7 @@ while (num !== 0){
   arr.push(aux);
 }
 j = arr.reverse().join("");
-
 return j;
-
 }
 
 

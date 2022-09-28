@@ -44,10 +44,7 @@ var bar = 1;
 baz = 2;
 ```
 //undefined
-//undefined
-//Hola!
-//1
-//2
+//error
 
 
 ```javascript
@@ -86,7 +83,7 @@ console.log(pm);
 ```
 //The Flash
 //Reverse Flash
-//TonyThe Flash
+//The Flash
 //Franco
 
 
@@ -134,6 +131,7 @@ function test() {
 
 test();
 ```
+//undefined
 //2
 
 
@@ -153,7 +151,7 @@ function getFood(food) {
 
 getFood(false);
 ```
-//Meow Mix
+//Undefined
 
 ### This
 

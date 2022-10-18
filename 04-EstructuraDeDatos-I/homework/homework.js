@@ -1,5 +1,7 @@
 'use strict'
 
+const { prototype } = require("@11ty/eleventy");
+
 /*
 Definir las funciones recursivas nFactorial y nFibonacci.
 
@@ -41,27 +43,20 @@ Pueden utilizar class o función constructora.
 */
 
 function Queue() {
-  this.queue = [];
-}
-Queue.prototype.enqueue = function(value){
-  this.queue.unshift(value);
-  //return this.queue;
+    this.queue = []
 }
 
+Queue.prototype.enqueue = function(valor){
+  this.queue.push(valor)
+}
 
 Queue.prototype.dequeue = function(){
- return this.queue.pop();
- // return this.queue;
+  return this.queue.shift()
 }
 
-Queue.prototype.size = function (){
-  return this.queue.length;
+Queue.prototype.size = function(){
+  return this.queue.length
 }
-    
-
-
-
-
 
 // No modifiquen nada debajo de esta linea
 // --------------------------------
